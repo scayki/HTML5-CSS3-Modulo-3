@@ -8,18 +8,28 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; /* o contain exibe a imagem em 100%  o cover cobre a tela inteira, mas da um corte na imagem se necessário */
+             /* o contain exibe a imagem em 100%  o cover cobre a tela inteira, mas da um corte na imagem se necessário */
 
 
             /* se o conteúdo for grande vai passar da imagem e ficar na barra preta*/
+
+             /* "vinculo" faz a imagem rolar ou não de acordo com o parâmetro dado*/
+
+
+            /* shorthand - backgroun
+                1 - color 
+                2 - image
+                3 - position
+                4 - repeat
+                5 - (size) "atualmente os navegadores não aceitam o size, mas ele está na documentação da W3C, USE O BACKGROUND-SIZE Para esse problema"
+                6 - attachment */
+
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+                background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 20px;
             margin: auto;
             border: 2px solid rgb(0, 0, 0);
