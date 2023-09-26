@@ -53,6 +53,11 @@ section{
     font-size: 3.5vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+    
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -61,12 +66,28 @@ section.normal{
 section.imagem{
     background-color: rgb(42, 42, 42);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541); /* o inset é uma propriedade que faz a sombra da caixa na parte de dentro*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.238);
+    background-color: rgba(0, 0, 0, 0.481);
    display: inline-block;
     padding: 12px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url(background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img2{
+    background-image: url(background002.jpg);
+    background-position: right center;
+   
 }
 
 footer{
