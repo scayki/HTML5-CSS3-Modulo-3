@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){ /* 
+            odd significa ímpar em inglês. torna somente as linhas ímpares da tabela com as configurações definidas
+            
+            even siginifica par e funciona igual ao odd
+            */
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(even){
+            background-color: blue;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Anatomia de tabelas grandes
+        table
+            Caption
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <h1>Tabelas grandes</h1>
+
+    <table>
+        <caption>População dos estados brasileiros</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+        </p>harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos laborum explicabo nobis eligendi error saepe repellendus, dignissimos a, commodi illo fugit omnis voluptatibus molestiae! Consequatur laudantium cumque aut!Lorem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quia suscipit recusandae quisquam ea omnis error aspernatur fuga, reprehenderit nostrum deleniti voluptatibus sapiente incidunt quibusdam cumque tempore, modi odio? Quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae tempora consequatur. Minus ad aliquid facilis soluta, aperiam praesentium? Vitae excepturi a cum! Id, cumque ratione error facere fugit commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cum voluptate consequatur sit sapiente explicabo ea, harum quam ipsam itaque beatae ipsum repellat asperiores pariatur. Ex voluptatem ratione eos tempora.lorem
+    </p>
+
+</body>
+</html>
